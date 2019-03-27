@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Login|Codefortress</title>
+		<meta name="description" content="Visual feedback for password strength on an image that gets pixelated or blurred." />
+		<meta name="keywords" content="password strength, visual feedback, image, canvas, javascript, css, blur, pixelated" />
+		<meta name="author" content="Codrops" />
+		<link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Source+Code+Pro" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="./styles/login.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this site in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="login loading">
+
+		<main>
+
+			<!--<div class="centerbox">-->
+
+				<!--<input type="text" id="email">-->
+			<!--</div>-->
+
+			<div class="sidebox">
+                <img src="images/hestialogo.png" class="logo">
+
+
+
+				<img src="images/hestialogo.png" class="logo2">
+
+
+
+				<form class="form" action="" method="">
+					<!--<div class="form__item">-->
+						<!--<label class="form__label" for="email">Full Name</label>-->
+						<!--<input class="form__input" type="text" name="name" id="name">-->
+					<!--</div>-->
+					<div class="formitem">
+						<label class="formlabel" for="email">Email</label>
+						<input class="forminput" type="email" name="email" id="email">
+					</div>
+					<div class="formitem">
+						<label class="formlabel" for="password">Password</label>
+
+							<input class="forminput" type="password" name="password" id="password">
+
+
+					</div>
+					<div class="formitem form__item--actions">
+						<!--<span>Already have an account? <a class="form__link" href="#">Login here</a></span>-->
+						<input class="formbutton" type="button" name="login" value="login">
+					</div>
+				</form>
+			</div>
+			<div class="content content--full">
+				<div class="poster" style="background-image:url(images/v1.png);background-color: grey"></div>
+				<div class="canvas-wrap">
+					<canvas></canvas>
+				</div>
+
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/zxcvbn.js"></script>
+		<script src="js/login.js"></script>
+	</body>
+</html>
